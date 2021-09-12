@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;500&family=Quicksand:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main {
+    flex: 1;
+    margin-bottom: 60px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie__img {
+    width: 300px;
+    margin: 0 auto;
+    object-fit: contain;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #262626;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.header__color {
+    background-color: #262626;
+    height: 80px;
+}
+
+.head-desc {
+    font-family: 'Josefin Slab', serif;
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.menu-header {
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.movie__name {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.movie__name:hover {
+    color: darkblue;
+}
+
+.movie__img__title {
+    width: 280px;
+    height: 420px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.movie__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie__actors {
+    margin-left: 21px;
+}
+
+.actor__img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: repeat(8, 9%);
+    grid-gap: 6px;
+    justify-content: center;
+}
+
+.title__decor {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.film__description {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #666666;
+}
+
+.film__type {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    color: navy;
+}
+
+.actor__name {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+.actor__role {
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+}
+
+.actor__details {
+    display: flex;
+    margin-top: 40px;
+}
+
+.actor__image {
+    width: 270px;
+    height: 370px;
+    /*object-fit: cover;*/
+}
+
+.actor_name {
+    font-family: 'Righteous', cursive;
+    font-size: 22px;
+}
+
+.actors__name {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.details__one {
+    max-width: 40%;
+}
+
+.details__two {
+    max-width: 60%;
+    margin-left: 60px;
+}
+
+.title__description {
+    max-width: 270px;
+}
+
+.rows__films {
+    display: grid;
+    grid-template-columns: repeat(8, 15%);
+    grid-gap: 6px;
+}
+
+.title__name {
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+}
+
+.title__name:hover {
+    color: navy;
+}
+
+.actors__img {
+    margin: 0 auto;
+}
+
+.title__decoration {
+    color: navy;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.footer__style {
+    background-color: #262626;
+    height: 80px;
+}
+
+.footer__text {
+    font-family: 'Josefin Slab', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.all__actors {
+    display: grid;
+    grid-template-columns: repeat(9,11%);
+    grid-gap: 5px;
+    margin-bottom: 40px;
+}
+
+.btn-trailer {
+    border: 2px solid transparent;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 4px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+    text-transform: lowercase;
+    color: ghostwhite;
+    background-color: darkblue;
+}
+
+.btn-trailer:hover {
+    background-color: darkorange;
+}
+
+.btn-srch {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    width: 60px;
+    margin-left: 10px;
+    color: whitesmoke;
+    font-family: 'Josefin Slab', serif;
+}
+
+.browse__title {
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+}
+
+.pageButton {
+    border: 2px solid darkblue;
+    font-size: 18px;
+    color: black;
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    //margin-top: 30px;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+}
+
+.search__btn {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.search__message {
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btn-actors {
+    width: 100%;
+}
+
+.films-list {
+    display: flex;
+
+}
+
+.list__desc {
+    margin-left: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.list__span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #666666;
+}
+
+.film__date {
+    font-family: 'Josefin Slab', serif;
+}
+
+.heroes__name {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
